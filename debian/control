@@ -8,7 +8,6 @@ Build-Depends: debhelper (>= 7.0.50~),
                dh-python,
                dpkg-dev (>= 1.16.1~),
                help2man (>= 1.37.1~),
-               python3-sphinx,
                python3-all-dev,
                python3-all-dbg,
                python3-numpy (>= 1:1.12.1-3.1) <!nocheck>,
@@ -44,13 +43,3 @@ Depends: ${python3:Depends}, ${misc:Depends}, ${shlibs:Depends}, cython3 (= ${bi
 Description: C-Extensions for Python 3 - debug build
  This package contains Cython libraries built against versions of
  Python configured with --pydebug.
-
-Package: cython-doc
-Architecture: all
-Multi-Arch: foreign
-Section: doc
-Depends: ${misc:Depends}, libjs-jquery, libjs-underscore
-Suggests: cython3
-Description: C-Extensions for Python - documentation
- This package contains documentation for Cython.
-
